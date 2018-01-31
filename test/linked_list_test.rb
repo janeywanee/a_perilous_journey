@@ -1,6 +1,7 @@
 require "minitest/autorun"
 require "./lib/linked_list"
 require "./lib/node"
+require "pry"
 
 class LinkedListTest <Minitest::Test
 
@@ -28,12 +29,14 @@ class LinkedListTest <Minitest::Test
        assert_equal list.count,1
        list.append("South")
        list.append("North")
+       binding.pry
        assert_equal list.count,3
      end
 
      def test_list_into_string
        list = LinkedList.new
        list.append("West")
+       list.append("Hardy")
        assert_equal list.to_string,"The West family"
    end
  end
