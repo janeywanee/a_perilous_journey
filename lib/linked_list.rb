@@ -44,7 +44,7 @@ class LinkedList
       current_node = @head
       my_counter = 1
 
-      until current_node == nil
+      until current_node.next_node == nil
         current_node = current_node.next_node
 
         my_counter +=1
@@ -57,7 +57,7 @@ class LinkedList
   def to_string
     current_node = @head.next_node
     family_name = "The #{@head.surname} family"
-    until current_node.next_node == nil do
+    until current_node == nil do
     family_name << ", followed by the #{current_node.surname} family"
       current_node = current_node.next_node
     end

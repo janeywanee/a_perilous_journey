@@ -45,7 +45,6 @@ end
        list.append("Rhodes")
        list.append("Hardy")
        list.append("Mckinney")
-       binding.pry
        assert_equal "The Rhodes family, followed by the Hardy family, followed by the Mckinney family", list.to_string
    end
  end
