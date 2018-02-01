@@ -58,8 +58,8 @@ class LinkedList
     current_node = @head.next_node
     family_name = "The #{@head.surname} family"
     until current_node == nil do
-    family_name << ", followed by the #{current_node.surname} family"
-      current_node = current_node.next_node
+          family_name << ", followed by the #{current_node.surname} family"
+          current_node = current_node.next_node
     end
     family_name
   end
